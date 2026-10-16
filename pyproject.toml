@@ -7,3 +7,6 @@ name = "tic-engine-etl"
 version = "0.1.0"
 description = "Python ETL System"
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "storage*", "extractors*", "orchestrator*"]
